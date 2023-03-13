@@ -16,7 +16,7 @@ fun main() {
             1 -> Day1("src/main/resources/day1input.txt")
             2 -> Day2("src/main/resources/day2input.txt")
             3 -> Day3("src/main/resources/day3input.txt")
-            3 -> Day4("src/main/resources/day4input.txt")
+            4 -> Day4("src/main/resources/day4input.txt")
 
             0 -> {
                 println("Bye")
