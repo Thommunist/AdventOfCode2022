@@ -41,9 +41,7 @@ class Day4(fileName: String) {
         var pairs = 0
 
         lines.forEach { line ->
-            val parts = line.split(',')
-            val partOne = parts[0].split("-")
-            val partTwo = parts[1].split("-")
+            val (partOne, partTwo) = line.split(',').map { it.split("-") }
             val firstArray = mutableListOf<Int>()
             val secondArray = mutableListOf<Int>()
 
@@ -62,6 +60,4 @@ class Day4(fileName: String) {
 
         return "Total pairs that fully contain each other: $pairs"
     }
-
-
 }
